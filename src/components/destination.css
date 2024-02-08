@@ -1,0 +1,80 @@
+.destination{
+    text-align: center;
+    margin: 4rem 5rem;
+}
+
+.destination h1{
+    font-weight: 400;
+}
+
+.des-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;   
+}
+
+
+.des-text-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    
+}
+.des-text-reverse p{
+    font-weight: 350;
+}
+
+
+.img-dev img {
+    width: 40%;
+    height: 50%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.img-dev img:hover {
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+.des-text p{
+    font-weight: 350;
+}
+
+.p{
+    font-weight: 350;
+}
+
+@media screen and (max-width:850px) {
+
+    .des-text{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction:column-reverse;
+      
+        
+    }
+
+    .des-text-reverse{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction:column-reverse;
+      
+        
+    }
+
+    .img-dev img {
+    width: 40%;
+    height: 50%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+    
+}

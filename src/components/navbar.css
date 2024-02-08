@@ -1,0 +1,137 @@
+.navbarItems{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    background-color: #ffffffd7;
+    
+}
+
+.navbarLogo{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logoSpan{
+    color: #01959a;
+}
+
+.navbarList{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    list-style: none;
+    grid-gap : 15px;
+    align-items: center;
+
+}
+
+.navLinks{
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+
+}
+
+.navbarList i {
+    padding-right: 10px;
+}
+
+.navbarList li:hover {
+    background-color: #01959a;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    padding: 5px 0 5px 0;
+}
+
+.navbarList a:hover {
+    color: #fff;
+}
+
+.navLinksMobile{
+    display: none;
+}
+
+button{
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #222;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.menuIcons{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+
+    .navbarItems{
+        z-index: 99;
+    }
+
+
+    .navbarList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #fff;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: center;
+    padding: 80px 0 30px 0;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    
+    }
+
+
+    .navbarList li:hover {
+            background-color: #01959a;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+    }
+
+    .navbarList.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menuIcons{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
